@@ -9,15 +9,24 @@ public class Main {
         double num2;
         double result;
 
-        //
-        
-    }
-    public void capturaNum(){
+        // Capturas de numeros
         Scanner captura = new Scanner(System.in);
         System.out.println("Ingrese el primer numero: ");
-        int num1 = captura.nextInt();
+        num1 = captura.nextInt();
         System.out.println("Ingrese el segundo numero: ");
-        int num2 = captura.nextInt();
+        num2 = captura.nextInt();
+
+        // Suma
+        try {
+            result = num1 + num2;
+        } catch (ArithmeticException e) {
+            System.out.println("Error por letra" + e.getMessage());
+        }
+
+        // resta
+
+
+
     }
 
 
